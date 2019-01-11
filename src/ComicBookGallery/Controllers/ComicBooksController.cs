@@ -10,11 +10,17 @@ namespace ComicBookGallery.Controllers
     {
         public ActionResult Detail()
         {
-            if( DateTime.Today.DayOfWeek == DayOfWeek.Monday )
-            {
-                return Redirect("/");
-            }
-            return Content( "Hello from the comic books controller!" );
+            ViewBag.SeriesTitle = "Spider-Man";
+            ViewBag.IssueNumber = 700;
+            ViewBag.Description = "<p>This is a description</p>";
+            ViewBag.AuthorProps = new string[] {
+                "Stringy",
+                "Bingy",
+                "Hangry",
+                "Bindy",
+                "Windy"
+            };
+            return View();
         }
     }
 }
