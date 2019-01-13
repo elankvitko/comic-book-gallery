@@ -12,6 +12,7 @@ namespace ComicBookGallery.data
         {
             new ComicBook()
             {
+                Id = 1,
                 SeriesTitle = "The Amazing Spider-Man",
                 IssueNumber = 700,
                 DescriptionHtml = "<p>This is a description</p>",
